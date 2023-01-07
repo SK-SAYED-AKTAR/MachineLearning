@@ -28,7 +28,7 @@ if __name__ == "__main__":
     pt2 = np.array([[0, 0], [w, 0], [0, h], [w, h]], dtype=np.float32)
 
     # Load the image
-    img = cv2.imread("./images/ai.png")
+    img = cv2.imread("./images/ai.webp")
     img = cv2.resize(img, (600, 600))
     cv2.imshow("Sayed", img)
 
