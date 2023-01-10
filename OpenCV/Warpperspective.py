@@ -14,10 +14,7 @@ def handle_mouse(event, x, y, flag, params):
         matrix = cv2.getPerspectiveTransform(pt1, pt2)
         output_img = cv2.warpPerspective(img, matrix, (w, h))
         cv2.imshow("Warpped image", output_img)
-    
-
-
-
+        # cv2.imwrite("./output.jpg", output_img)
 
 
 if __name__ == "__main__":
